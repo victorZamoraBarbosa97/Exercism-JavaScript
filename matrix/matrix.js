@@ -13,7 +13,6 @@ export class Matrix {
           .map( row => row.split(" ")
           .map( num => parseInt(num) ) 
         )
-
   }
 
   get columns() {
