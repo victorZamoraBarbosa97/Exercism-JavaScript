@@ -1,0 +1,59 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Python312\Scripts\;C:\Python312\;C:\ProgramData\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Users\chato\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files\GitHub CLI\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\dotnet\;C:\Program Files\PowerShell\7-preview\preview;C:\Program Files\PowerShell\7\;C:\Program Files\Go\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\chato\.console-ninja\.bin;C:\Users\chato\AppData\Local\Microsoft\WindowsApps;C:\Users\chato\AppData\Local\Programs\Microsoft VS Code\bin;C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Node.js;C:\Users\chato\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin;C:\Users\chato\AppData\Local\Programs\Hyper\resources\bin;C:\Users\chato\AppData\Local\Yarn\bin;C:\Users\chato\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Exercism;C:\msys64\ucrt64\bin;C:\Program Files\nodejs\firebase;;C:\Users\chato\AppData\Local\Microsoft\WindowsApps;C:\Users\chato\go\bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.17.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\chato\AppData\Local\Yarn\Cache\v6\npm-globals-14.0.0-898d7413c29babcf6bafe56fcadded858ada724e-integrity\node_modules\globals\index.d.ts' -> 'C:\Users\chato\Exercism\javascript\list-ops\node_modules\@eslint\eslintrc\node_modules\globals\index.d.ts'
+
+npm manifest: 
+  {
+    "name": "@exercism/javascript-list-ops",
+    "description": "Exercism exercises in Javascript.",
+    "author": "Katrina Owen",
+    "private": true,
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/exercism/javascript",
+      "directory": "exercises/practice/list-ops"
+    },
+    "devDependencies": {
+      "@exercism/babel-preset-javascript": "^0.5.1",
+      "@exercism/eslint-config-javascript": "^0.8.1",
+      "@jest/globals": "^29.7.0",
+      "@types/node": "^22.10.3",
+      "@types/shelljs": "^0.8.15",
+      "babel-jest": "^29.7.0",
+      "core-js": "~3.40.0",
+      "diff": "^7.0.0",
+      "eslint": "^9.19.0",
+      "expect": "^29.7.0",
+      "globals": "^15.14.0",
+      "jest": "^29.7.0"
+    },
+    "dependencies": {},
+    "scripts": {
+      "lint": "corepack pnpm eslint .",
+      "test": "corepack pnpm jest",
+      "watch": "corepack pnpm jest --watch",
+      "format": "corepack pnpm prettier -w ."
+    },
+    "packageManager": "pnpm@9.15.2"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
