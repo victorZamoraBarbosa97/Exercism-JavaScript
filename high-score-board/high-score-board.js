@@ -8,9 +8,9 @@
  */
 export function createScoreBoard() {
   const obj = {
-    'The Best Ever': 1000000
-  }
-  return obj
+    "The Best Ever": 1000000,
+  };
+  return obj;
 }
 
 /**
@@ -22,7 +22,7 @@ export function createScoreBoard() {
  * @returns {Record<string, number>} updated score board
  */
 export function addPlayer(scoreBoard, player, score) {
-  scoreBoard[player] = score
+  scoreBoard[player] = score;
   return scoreBoard;
 }
 
@@ -34,7 +34,7 @@ export function addPlayer(scoreBoard, player, score) {
  * @returns {Record<string, number>} updated score board
  */
 export function removePlayer(scoreBoard, player) {
-  delete scoreBoard[player]
+  delete scoreBoard[player];
   return scoreBoard;
 }
 
@@ -47,8 +47,8 @@ export function removePlayer(scoreBoard, player) {
  * @returns {Record<string, number>} updated score board
  */
 export function updateScore(scoreBoard, player, points) {
-  scoreBoard[player] += points
-  return scoreBoard
+  scoreBoard[player] += points;
+  return scoreBoard;
 }
 
 /**
@@ -59,10 +59,10 @@ export function updateScore(scoreBoard, player, points) {
  */
 export function applyMondayBonus(scoreBoard) {
   for (const key in scoreBoard) {
-    scoreBoard[key]+=100
-    }
-    return scoreBoard
+    scoreBoard[key] += 100;
   }
+  return scoreBoard;
+}
 
 /**
  * Normalizes a score with the provided normalization function.
@@ -71,5 +71,5 @@ export function applyMondayBonus(scoreBoard) {
  * @returns {number} normalized score
  */
 export function normalizeScore(obj) {
-  return  obj.normalizeFunction(obj.score)
+  return obj.normalizeFunction(obj.score);
 }
